@@ -180,7 +180,7 @@ input[type=submit] {
 
 /* Media queries */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     h1 {
         font-size: 3rem;
     }
@@ -195,6 +195,7 @@ input[type=submit] {
     }
     body {
         margin: 10px
+        
     }
 
     /* desktop styling header */
@@ -209,6 +210,7 @@ input[type=submit] {
     .main-nav ul {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         margin: 0;
     }
     .main-nav a:link, a:visited {
@@ -234,6 +236,7 @@ input[type=submit] {
     }
     .promo-posters {
         display: flex;
+        flex-wrap: wrap;
     }
     .season1-promo, .season2-promo, .season3-promo, .season4-promo {
         height: auto;
