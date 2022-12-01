@@ -1,0 +1,320 @@
+/* Web fonts */
+@font-face {
+    font-family:'stranger';
+    src: url(../fonts/Benguiat\ Bold.ttf);
+}
+
+/* Algemene styling */
+body {
+   background-color: #1e0707;
+    margin: 35px;  
+}
+
+/* navigatie */
+.main-nav a:link, a:visited {
+color: #ff1515;
+text-decoration: none;
+background-color: rgb(255, 16, 16);
+border: 1px solid #1e0707;
+color: #1e0707;
+padding: 15px 25px;
+text-align: center;
+display: block;
+font-family: 'stranger', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 1.1rem;
+font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: #3a5fe5 ;
+    background-color: black;
+}
+.main-nav a:active {
+    color: black;
+    background-color: rgb(0, 0, 0);
+}
+.main-nav ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;   
+    
+}
+
+.main-nav li {
+    display: inline;
+    margin: 0;
+    
+}
+li a.char {
+    background-color: black;
+    color: #ff1515;
+}
+.main-logo {
+    width: 100%;
+    height: auto;
+    
+}
+img {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* Font styling */
+.h1, h1 {
+    color: #ff1515;
+    font-family: 'stranger', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+
+div.main-main, p {
+color: #ff1515;
+font-family: 'stranger', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 0.75rem ;
+text-align: center;
+}
+
+footer.h3, h2, h3 {
+    color: #ff1515;
+    text-align: center;
+}
+
+/* headshot styling */
+
+.characters img {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.eleven, .mike, .will, .max, .lucas, .dustin, .nancy, .steve, .jonathan, .robin, .joyce, .jim, .eddie, .argyle, .erica {
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 15px 5px 10px 10px;
+    color: #ff1515;
+    font-size: 1.3rem;
+    
+}
+.characters h3 {
+    color: #ff1515;
+    font-style: bold;
+    font-size: 1.5rem;
+}
+p {
+    font-size: 0.7rem;
+    
+}
+
+/* Theory styling */
+
+.t1, .t2 {
+    padding: 2px 8px 10px 8px ;
+    border-radius: 10px;
+    margin-bottom: 15px; 
+}
+
+
+.t1 p, .t1 h2, .t2 p, .t2 h2 {
+    text-align: left;      
+}
+
+/* Form */
+.form {
+    width: 100%;
+    
+}
+
+label {
+    color: #ff1515;
+    font-family: 'stranger', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9rem;
+}
+
+textarea {
+    padding: 5px;
+    resize: none;
+}
+
+.fname {
+    margin: 10px;
+}
+.input {
+    margin: 10px;
+    text-align: center;
+}
+#submit {
+    display: block;
+    margin: 5px auto 10px auto;
+    font-family: 'stranger', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+.fname, .email {
+    text-align: center;
+    font-family: 'stranger', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10px;
+}
+
+.season {
+    text-align: center;
+    display: flex;
+    
+}
+.s1, .s2, .s3, .s4 {
+    padding: 5px;
+}
+input[type=submit] {
+ background-color: #ff1515;
+ padding: 10px 40px;
+ margin: 2px;
+ border: none;
+ color: #1e0707;
+ border-radius: 1px;
+ font-size: 1.1rem;
+ text-align: center;
+ font-family: 'stranger', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.0rem;
+    }
+    body {
+        margin: 10px
+    }
+
+    /* desktop styling header */
+    .main-logo {
+       display: grid;
+       height: auto;
+       width: 350px;
+       margin-left: auto;
+       margin-right: auto;
+       
+    }
+    .main-nav ul {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .main-nav a:link, a:visited {
+        font-size: 1rem;
+        padding: 2px 60px;
+        margin: 8px;
+
+    }
+
+    /* desktop styling content main page */
+    .main-main {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .main-content {
+        padding: 20px;
+    }
+    .main-content p {
+        text-align: start;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .promo-posters {
+        display: flex;
+    }
+    .season1-promo, .season2-promo, .season3-promo, .season4-promo {
+        height: auto;
+        width: 280px;
+        margin: 35px auto 30px auto;
+        padding: 3px;
+        
+    }
+
+    /* desktop styling characters page */
+    .characters {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    }
+    
+    /* desktop styling theory page */
+    .theories {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 30px;
+    }
+    .t1, .t2 {
+        padding: 50px;
+    }
+    .t2 p {
+        text-align: left;
+    }
+    .t2 h2, .t1 h2 {
+        text-align: center;
+        background-color: #ff1515;
+        color: #1e0707;
+        border-radius: 2px;
+        
+    }
+    .theory-pic {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    }
+    /* desktop styling submit page */
+    .intro_submit {
+    margin: 30px;
+    }
+
+    .fname, .email {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+
+    .season {
+    display: block;
+    padding: 10px;
+
+    }
+
+    textarea {
+    width: 40%;
+    }
+ 
+    /* scrollbar */
+    ::-webkit-scrollbar {
+    width: 8px;
+    
+    }
+     ::-webkit-scrollbar-track {
+    background: #1e0707;
+    border-radius: 5px;
+    }
+  
+     ::-webkit-scrollbar-thumb {
+    background: #ff1515;
+    border-radius: 5px;
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+    background: rgb(141, 22, 22);
+    }
+}
